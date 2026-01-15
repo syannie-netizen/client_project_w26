@@ -1,2 +1,2 @@
-# client_project_w26
-SI539 client_project_w26
+# Client_Project_Starter_Code
+Starter code for the Fall 2025 & Winter 2026 Client Project
