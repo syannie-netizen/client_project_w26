@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolios</title>
@@ -15,7 +17,7 @@
       <li><a href = "index.html">Home</a></li>
       <li><a href = "resume.html">Resumes</a></li>
       <li><a href = "networking.html">Networking & Connections</a></li>
-      <li><a href = "portfolios.html">Portfolios</a></li>
+      <li><a href = "portfolios.html" class="active">Portfolios</a></li>
     </ul>
   </nav>
   <h1>Portfolios Support</h1>
@@ -39,8 +41,8 @@
 
       <h3>Design Jams</h3>
       <ul>
-          <li><strong>Engaged Learning Office (ELO) Design Jams:</strong> Hosted in collaboration with local organizations or specific themes. 
-              <ul>
+          <li><strong>Engaged Learning Office (ELO) Design Jams:</strong> Hosted in collaboration with local organizations or specific themes.
+              <ul class="sub-list">
                   <li><a href="https://umforms.tfaforms.net/218702" target="_blank">Subscribe to ELO Newsletter</a></li>
                   <li><a href="https://events.blackthorn.io/en/Hn1RKit7/g/r23Pezm49E" target="_blank">Register for ELO Events</a></li>
               </ul>
@@ -51,9 +53,9 @@
 
       <h3>Hands-On Experiential Programs</h3>
       <ul>
-          <li><a href="https://www.si.umich.edu/student-experience/engaged-learning/about-engaged-learning-office" target="_blank">UMSI Engaged Learning Office (ELO)</a></li>
-          <li><a href="https://www.si.umich.edu/student-experience/engaged-learning/community-based-opportunities" target="_blank">Community-Based Opportunities</a>-deepen understanding of societal issues and how information can be used to address them</li>
-          <li><a href="https://www.si.umich.edu/student-experience/engaged-learning/entrepreneurship-and-innovation-opportunities" target="_blank">Entrepreneurship & Innovation Opportunities</a></li>
+          <li><a href="https://www.si.umich.edu/student-experience/engaged-learning/about-engaged-learning-office" target="_blank">UMSI Engaged Learning Office (ELO)</a> - connects students with real-world projects, clients, and hands-on learning experiences outside the classroom</li>
+          <li><a href="https://www.si.umich.edu/student-experience/engaged-learning/community-based-opportunities" target="_blank">Community-Based Opportunities</a> - deepen understanding of societal issues and how information can be used to address them</li>
+          <li><a href="https://www.si.umich.edu/student-experience/engaged-learning/entrepreneurship-and-innovation-opportunities" target="_blank">Entrepreneurship & Innovation Opportunities</a> - explore startup culture, develop new ideas, and build skills in innovation and product thinking</li>
           <li><a href="https://mdp.engin.umich.edu/" target="_blank">MDP (Multidisciplinary Design Program)</a>-year-long program with company sponsor, student teams, and weekly meetings</li>
       </ul>
       <img src="images/UNIVERSITY_CAREER_ALUMNI_NETWORK.jpg" alt="UNIVERSITY CAREER ALUMNI NETWORK" width="600">
@@ -64,6 +66,7 @@
       <h2>3. Structuring Your Portfolio</h2>
       <h3>Creating Your Portfolio Site</h3>
       <p>Choose a platform to present your portfolio. Popular options include:</p>
+      <div class="card">
       <ul>
           <li><a href="https://sites.google.com/" target="_blank">Google Sites</a></li>
           <li><a href="https://www.wix.com/" target="_blank">Wix</a></li>
@@ -71,50 +74,56 @@
           <li><a href="https://webflow.com/" target="_blank">Webflow</a></li>
           <li><a href="https://www.squarespace.com/" target="_blank">Squarespace</a></li>
       </ul>
+    </div>
 
       <h3>Choosing a Consistent Theme</h3>
-      <ul>
+      <ol>
           <li>Maintain visual consistency across pages</li>
           <li>Highlight your UX Design skills</li>
           <li>Customize templates thoughtfully to reflect your personal brand</li>
-      </ul>
+      </ol>
   </section>
 
   <!-- 4. Components of a Portfolio -->
-  <section>
-      <h2>4. Components of a Portfolio</h2>
-      <ul>
-          <li>Home Page</li>
-          <li>About Me Page</li>
-          <li>Case Studies
-              <ul>
-                  <li>Summary/Overview</li>
-                  <li>Timeline</li>
-                  <li>Your Role</li>
-                  <li>Tools, Methods, and/or Skills</li>
-                  <li>Context/Background</li>
-                  <li>Problem Statement & Questions</li>
-                  <li>Research & Personas</li>
-                  <li>Design Process</li>
-                  <li>Final Design/Outcome</li>
-                  <li>Lessons Learned / Reflection / Conclusion</li>
-              </ul>
-          </li>
-          <li>Resume (Hyperlink to PDF)</li>
-          <li>LinkedIn (Hyperlink to account)</li>
-          <li>[Optional] Art, Graphic Design, & Additional Work Section</li>
-      </ul>
-  </section>
+<!-- 4. Components of a Portfolio -->
+<section>
+    <h2>4. Components of a Portfolio</h2>
+    <p>A strong portfolio is more than a collection of project files. Each page serves a specific purpose in telling your story as a designer and researcher. Below are the key components every UX portfolio should include.</p>
+
+    <ul>
+        <li><strong>Home Page:</strong> Your first impression. It should clearly communicate who you are, what you do, and invite visitors to explore your work. Keep it clean, focused, and visually engaging.</li>
+        <li><strong>About Me Page:</strong> A short introduction to your background, skills, and goals. This is where employers get a sense of your personality and what makes you unique beyond your projects.</li>
+        <li><strong>Case Studies:</strong> The core of your portfolio. Each case study should walk through your full design process, not just the final result. Include the following elements:
+            <ul class="sub-list">
+                <li><strong>Summary/Overview:</strong> A brief description of the project, its goals, and your role</li>
+                <li><strong>Timeline:</strong> How long the project took and what phases were involved</li>
+                <li><strong>Your Role:</strong> What you specifically contributed to the team and project</li>
+                <li><strong>Tools, Methods, and/or Skills:</strong> The software, research methods, and design skills you applied</li>
+                <li><strong>Context/Background:</strong> The problem space and why this project mattered</li>
+                <li><strong>Problem Statement & Questions:</strong> The central design challenge you were solving</li>
+                <li><strong>Research & Personas:</strong> How you gathered insights and who you were designing for</li>
+                <li><strong>Design Process:</strong> Your sketches, wireframes, prototypes, and iterations</li>
+                <li><strong>Final Design/Outcome:</strong> The finished product and any measurable impact or results</li>
+                <li><strong>Lessons Learned / Reflection / Conclusion:</strong> What you would do differently and what you took away from the experience</li>
+            </ul>
+        </li>
+        <li><strong>Resume:</strong> Link directly to a PDF version of your resume so employers can download it easily without leaving your site.</li>
+        <li><strong>LinkedIn:</strong> Include a link to your LinkedIn profile so visitors can verify your experience and connect with you professionally.</li>
+        <li><strong>[Optional] Art, Graphic Design, & Additional Work:</strong> If you have creative work outside of UX, this section shows the full range of your visual skills and personal interests.</li>
+    </ul>
+</section>
+<!-- Content taken & modified from Claude with the prompt, "Rewrite the components of a portfolio section with longer descriptions and strong tags for each item"
+Claude. (2025). Claude (Claude Sonnet 4.6) [Large language model]. https://claude.ai -->
 
   <!-- 5. Revising Your Portfolio -->
   <section>
       <h2>5. Revising Your Portfolio</h2>
       <p>Getting feedback is crucial to creating a strong portfolio. You can:</p>
-      <ul>
+      <ol>
           <li>Ask mentors, peers, or instructors for constructive critique</li>
           <li>Test your portfolio with a potential user or employer</li>
           <li>Iterate and refine content, visuals, and storytelling</li>
-      </ul>
+      </ol>
       <img src="images/UMSI_CCSI_061124_04.jpg" alt="UMSI Career coaching" width="600">
   </section>
 
