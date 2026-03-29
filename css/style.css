@@ -294,7 +294,7 @@ section ul li {
 
 section > ul {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 0.4rem;
     list-style: none;
     padding-left: 0;
@@ -359,4 +359,65 @@ footer a:focus {
     outline: 3px solid #FFCB05;
     outline-offset: 2px;
     border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+        gap: 0 1.5rem;
+        padding: 1.5rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    header img {
+        grid-row: 1 / 3;
+        width: 120px;
+        margin-bottom: 0;
+    }
+    header nav ul li a {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* navigation */
+    header nav ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* main */
+    main {
+        padding: 2rem 3rem;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    /* CARDS: 3 columns on desktop */
+    .card ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* SECTION UL: stays 2 columns but with more gap */
+
+    section > ul {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+
+    /* H2: slightly larger */
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 2rem 3rem;
+    }
 }

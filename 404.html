@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404-Page Not Found</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 10rem 1.5rem;
+        }
+        .error-code {
+            font-family: 'Merriweather', Georgia, serif;
+            font-size: 6rem;
+            font-weight: 700;
+            color: #FFCB05;
+            line-height: 1;
+            margin: 0;
+        }
+        .error-msg {
+            font-size: 1.3rem;
+            color: #00274C;
+            font-weight: 700;
+            margin: 1rem 0 0.5rem;
+        }
+        .error-sub {
+            color: #1c2333;
+            margin-bottom: 1rem;
+        }
+        .back-btn {
+            display: inline-block;
+            background-color: #00274C;
+            color: #FFCB05;
+            font-weight: 700;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        .back-btn:hover,
+        .back-btn:focus {
+            background-color: #FFCB05;
+            color: #00274C;
+            outline: 2px solid #00274C;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#main-content">Skip to Main Content</a>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="resume.html">Resumes</a></li>
+            <li><a href="networking.html">Networking & Connections</a></li>
+            <li><a href="portfolios.html">Portfolios</a></li>
+          </ul>
+        </nav>
+        <h1>Welcome to the UMSI Career Development Resource Hub</h1>
+      </header>
+    <main id="main">
+        <div class="error-container">
+            <p class="error-code">404</p>
+            <p class="error-msg">Page Not Found</p>
+            <p class="error-msg">Sorry, looks like this page took a gap year.</p>
+            <div>
+                <p class="error-sub">💡 "Every expert was once a beginner. You're exactly where you need to be."</p>
+            </div>
+            <a href="index.html" class="back-btn">← Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> University of Michigan School of Information |
+          <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a>
+        </p>
+      </footer>
+      <script src="js/main.js"></script>
+</body>
+</html>
